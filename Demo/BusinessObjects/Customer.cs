@@ -41,7 +41,52 @@ namespace BusinessObjects
         
         public string Name
         {
-            get 
+            get
+            {
+                return _customerName;
+            }
+            set
+            {
+                _customerName = value;
+            }
+
+        }
+        public string LastName
+        {
+            get
+            {
+                return _customerLastName;
+            }
+            set
+            {
+                _customerLastName = value;
+            }
+        }
+             public string Email
+        {
+            get
+            {
+                return _customerEmail;
+            }
+            set
+            {
+                _customerEmail = value;
+            }
+        }
+             public string Skype
+        {
+            get
+            {
+                return _customerSkype;
+            }
+            set
+            {
+                _customerSkype = value;
+            }
+
         }
     }
+
+    
+    
 }

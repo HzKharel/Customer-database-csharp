@@ -32,7 +32,11 @@ namespace Demo
             Find_btn.Visibility = Visibility.Collapsed;
             Find_Grid.Visibility = Visibility.Visible;
         }
-
+        private void Delete_btn_Click(object sender, RoutedEventArgs e)
+        {
+            Delete_btn.Visibility = Visibility.Collapsed;
+            Delete_Grid.Visibility = Visibility.Visible;
+        }
         private void AddCustomer_btn_Click(object sender, RoutedEventArgs e)
         {
 
