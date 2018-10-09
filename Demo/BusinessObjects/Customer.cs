@@ -13,6 +13,7 @@ namespace BusinessObjects
         private string _customerLastName;
         private string _customerEmail;
         private string _customerSkype;
+        private string _CustomerPreferredContact;
 
 
         public int ID
@@ -84,6 +85,29 @@ namespace BusinessObjects
                 _customerSkype = value;
             }
 
+        }
+        public string PreferredContact
+        {
+            get
+            {
+                return _CustomerPreferredContact;
+            }
+            set
+            {
+               _CustomerPreferredContact = value;
+            }
+
+        }
+
+        public Customer(int id_, string Name_, string LastName_, string Email_, string Skype_,string PreferredContact_, int Telelphone_)
+        {
+            this._customerID = id_;
+            this._customerName = Name_;
+            this._customerLastName = LastName_;
+            this._customerEmail = Email_;
+            this._customerSkype = Skype_;
+            this._CustomerPreferredContact = PreferredContact_;
+            this._customerTelephone = Telelphone_;
         }
     }
 

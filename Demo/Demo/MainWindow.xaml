@@ -32,12 +32,12 @@
                 <TextBox x:Name="Find_txtbox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Enter Customer ID" VerticalAlignment="Top" Width="111"/>
                 <Button x:Name="Find_btn_2" Content="🔍" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Top" Width="36" Height="20"/>
             </Grid>
-            <Button x:Name="Delete_btn" Content="Delete Contact" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="154" Click="Find_btn_Click"/>
-            <Grid x:Name="Delete_Grid" HorizontalAlignment="Left" Height="20" Margin="10,45,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden">
+            <Button x:Name="Delete_btn" Content="Delete Contact" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="154" Click="Delete_btn_Click"/>
+            <Grid x:Name="Delete_Grid" HorizontalAlignment="Left" Height="20" Margin="10,43,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden">
                 <TextBox x:Name="Delete_txtbox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Enter Customer ID" VerticalAlignment="Top" Width="111"/>
                 <Button x:Name="Delete_btn_2" Content="❌" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Top" Width="36" Height="20"/>
             </Grid>
-            <Label x:Name="Info_txt" Content="" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Height="43" Width="154"/>
+            <Label x:Name="Info_txt" Content="" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Height="84" Width="154"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="58" Margin="335,10,0,0" VerticalAlignment="Top" Width="174">
             <Label Content="All Saved Contacts:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Height="25"/>
