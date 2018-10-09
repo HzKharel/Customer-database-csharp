@@ -13,7 +13,7 @@ namespace BusinessObjects
         private string _customerLastName;
         private string _customerEmail;
         private string _customerSkype;
-        private string _CustomerPreferredContact;
+        private int _CustomerPreferredContact;
 
 
         public int ID
@@ -86,7 +86,7 @@ namespace BusinessObjects
             }
 
         }
-        public string PreferredContact
+        public int PreferredContact
         {
             get
             {
@@ -99,7 +99,7 @@ namespace BusinessObjects
 
         }
 
-        public Customer(int id_, string Name_, string LastName_, string Email_, string Skype_,string PreferredContact_, int Telelphone_)
+        public Customer(int id_, string Name_, string LastName_, string Email_, string Skype_,int PreferredContact_, int Telelphone_)
         {
             this._customerID = id_;
             this._customerName = Name_;

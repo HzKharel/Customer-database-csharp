@@ -2,8 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Name="CMS" x:Class="Demo.MainWindow"
-        Title="Customer Management System -- 40312824" Height="315.84" Width="533" ResizeMode="NoResize">
-    <Grid Margin="0,0,4,2">
+        Title="Customer Management System -- 40312824" Height="349.459" Width="533" ResizeMode="NoResize">
+    <Grid Margin="0,0,4,3">
         <Grid HorizontalAlignment="Left" Height="234" Margin="10,10,0,0" VerticalAlignment="Top" Width="133">
             <TextBlock x:Name="FirstName_txt" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" Text="First Name:" Width="133" Height="30" FontSize="18" VerticalAlignment="Top"/>
             <TextBlock x:Name="LastName_txt" HorizontalAlignment="Left" Margin="0,45,0,0" TextWrapping="Wrap" Text="Last Name:" Width="133" Height="30" FontSize="18" VerticalAlignment="Top"/>
@@ -11,8 +11,10 @@
             <TextBlock x:Name="SkypeID_txt" HorizontalAlignment="Left" Margin="0,115,0,0" TextWrapping="Wrap" Text="Skype ID:" Width="133" Height="30" FontSize="18" VerticalAlignment="Top"/>
             <TextBlock x:Name="Telephone_txt" HorizontalAlignment="Left" Margin="0,154,0,0" TextWrapping="Wrap" Text="Telephone:" Width="133" Height="30" FontSize="18" VerticalAlignment="Top"/>
             <TextBlock x:Name="PreferredContact_txt" HorizontalAlignment="Left" Margin="0,195,0,0" TextWrapping="Wrap" Text="Preferred Contact:" Width="133" Height="30" FontSize="16" VerticalAlignment="Top"/>
+            <TextBlock x:Name="CustomerID_txt" HorizontalAlignment="Left" Margin="0,230,0,-29" TextWrapping="Wrap" Text="Customer ID:" Width="133" Height="33" FontSize="18" VerticalAlignment="Top"/>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="234" Margin="158,10,0,0" VerticalAlignment="Top" Width="163">
+
+        <Grid x:Name="TextFields" HorizontalAlignment="Left" Height="263" Margin="158,10,0,0" VerticalAlignment="Top" Width="163">
             <TextBox x:Name="First_Name" HorizontalAlignment="Left" Height="23" Margin="10,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
             <TextBox x:Name="Last_Name" HorizontalAlignment="Left" Height="23" Margin="10,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
             <TextBox x:Name="Email" HorizontalAlignment="Left" Height="23" Margin="10,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
@@ -23,24 +25,22 @@
                 <ListBoxItem Content="Skype"/>
                 <ListBoxItem Content="Telephone"/>
             </ComboBox>
-            <ComboBox x:Name="All_Contacts" HorizontalAlignment="Left" Margin="177,24,-188,0" VerticalAlignment="Top" Width="174" IsReadOnly="True"/>
+            <TextBox x:Name="CustomerID" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Margin="10,230,0,0"/>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="152" Margin="335,79,0,0" VerticalAlignment="Top" Width="174">
-            <Button x:Name="AddCustomer_btn" Content="Save Contact" HorizontalAlignment="Left" Margin="-326,166,0,-38" VerticalAlignment="Top" Width="301" Click="AddCustomer_btn_Click" Height="24"/>
+        <Grid HorizontalAlignment="Left" Height="297" Margin="335,10,0,0" VerticalAlignment="Top" Width="174">
+            <Button x:Name="AddCustomer_btn" Content="Save Contact" HorizontalAlignment="Left" Margin="-326,269,0,0" VerticalAlignment="Top" Width="301" Click="AddCustomer_btn_Click" Height="24"/>
             <Button x:Name="Find_btn" Content="Find Contact" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Click="Find_btn_Click"/>
-            <Grid x:Name="Find_Grid" HorizontalAlignment="Left" Height="20" Margin="10,9,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden">
-                <TextBox x:Name="Find_txtbox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Enter Customer ID" VerticalAlignment="Top" Width="111"/>
-                <Button x:Name="Find_btn_2" Content="🔍" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Top" Width="36" Height="20"/>
+            <Grid x:Name="Find_Grid" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden">
+                <TextBox x:Name="Find_txtbox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Enter Customer ID" VerticalAlignment="Top" Width="111" MouseEnter="Find_txtbox_MouseEnter"/>
+                <Button x:Name="Find_btn_2" Content="🔍" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Top" Width="36" Height="20" Click="Find_btn_2_Click"/>
             </Grid>
             <Button x:Name="Delete_btn" Content="Delete Contact" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="154" Click="Delete_btn_Click"/>
-            <Grid x:Name="Delete_Grid" HorizontalAlignment="Left" Height="20" Margin="10,43,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden">
-                <TextBox x:Name="Delete_txtbox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Enter Customer ID" VerticalAlignment="Top" Width="111"/>
-                <Button x:Name="Delete_btn_2" Content="❌" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Top" Width="36" Height="20"/>
+            <Grid x:Name="Delete_Grid" HorizontalAlignment="Left" Height="20" Margin="10,44,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden">
+                <TextBox x:Name="Delete_txtbox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Enter Customer ID" VerticalAlignment="Top" Width="111" MouseEnter="Delete_txtbox_MouseEnter"/>
+                <Button x:Name="Delete_btn_2" Content="❌" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Top" Width="36" Height="20" Click="Delete_btn_2_Click"/>
             </Grid>
-            <Label x:Name="Info_txt" Content="" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Height="84" Width="154"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="58" Margin="335,10,0,0" VerticalAlignment="Top" Width="174">
-            <Label Content="All Saved Contacts:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="108" Height="25"/>
+            <Label Content="All Saved Contacts:" VerticalAlignment="Top" Height="25" Margin="33,69,33,0"/>
+            <ListBox x:Name="AllContacts" HorizontalAlignment="Left" Height="198" Margin="10,99,0,0" VerticalAlignment="Top" Width="154" IsSynchronizedWithCurrentItem="False"/>
         </Grid>
     </Grid>
 </Window>

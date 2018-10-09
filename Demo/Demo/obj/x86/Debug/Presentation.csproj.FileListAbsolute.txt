@@ -72,3 +72,17 @@ C:\Users\harik\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Presentat
 C:\Users\harik\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Presentation.csproj.CopyComplete
 C:\Users\harik\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.exe
 C:\Users\harik\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.pdb
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.exe
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.pdb
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\bin\Debug\Demo.exe
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\bin\Debug\Demo.pdb
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\bin\Debug\BusinessObjects.dll
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\bin\Debug\BusinessObjects.pdb
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Presentation.csprojResolveAssemblyReference.cache
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\MainWindow.baml
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\MainWindow.g.cs
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\App.g.cs
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo_MarkupCompile.cache
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.g.resources
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.Properties.Resources.resources
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Presentation.csproj.GenerateResource.Cache
