@@ -86,3 +86,6 @@ C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug
 C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.g.resources
 C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo.Properties.Resources.resources
 C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Presentation.csproj.GenerateResource.Cache
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\AllShopContacts.g.cs
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\Demo_MarkupCompile.lref
+C:\Users\harik\Documents\Github\Customer-database-csharp\Demo\Demo\obj\x86\Debug\AllShopContacts.baml

@@ -12,7 +12,7 @@ namespace BusinessObjects
         {
             int Validated_telephone;
             int Validated_ID;
-            if ((!Int32.TryParse(id_, out Validated_ID)) && Validated_ID < 10001 || Validated_ID > 50000)
+            if ((!Int32.TryParse(id_, out Validated_ID)) || Validated_ID < 10001 || Validated_ID > 50000)
             {
                 return "ID validation failed. Please make sure its between 10001 and 50000.";
             }

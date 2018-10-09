@@ -28,7 +28,7 @@
             <TextBox x:Name="CustomerID" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Margin="10,230,0,0"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="297" Margin="335,10,0,0" VerticalAlignment="Top" Width="174">
-            <Button x:Name="AddCustomer_btn" Content="Save Contact" HorizontalAlignment="Left" Margin="-326,269,0,0" VerticalAlignment="Top" Width="301" Click="AddCustomer_btn_Click" Height="24"/>
+            <Button x:Name="AddCustomer_btn" Content="Save Contact" HorizontalAlignment="Left" Margin="-166,269,0,0" VerticalAlignment="Top" Width="142" Click="AddCustomer_btn_Click" Height="24"/>
             <Button x:Name="Find_btn" Content="Find Contact" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Click="Find_btn_Click"/>
             <Grid x:Name="Find_Grid" HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="154" Visibility="Hidden">
                 <TextBox x:Name="Find_txtbox" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="Enter Customer ID" VerticalAlignment="Top" Width="111" MouseEnter="Find_txtbox_MouseEnter"/>
@@ -40,7 +40,8 @@
                 <Button x:Name="Delete_btn_2" Content="❌" HorizontalAlignment="Left" Margin="118,0,0,0" VerticalAlignment="Top" Width="36" Height="20" Click="Delete_btn_2_Click"/>
             </Grid>
             <Label Content="All Saved Contacts:" VerticalAlignment="Top" Height="25" Margin="33,69,33,0"/>
-            <ListBox x:Name="AllContacts" HorizontalAlignment="Left" Height="198" Margin="10,99,0,0" VerticalAlignment="Top" Width="154" IsSynchronizedWithCurrentItem="False"/>
+            <ListBox x:Name="AllContacts" HorizontalAlignment="Left" Height="194" Margin="10,99,0,0" VerticalAlignment="Top" Width="154" IsSynchronizedWithCurrentItem="False" MouseDoubleClick="AllContacts_MouseDoubleClick"/>
         </Grid>
+        <Button x:Name="ShowAll" Content="Show All Contacts" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" Width="145" Height="24" Click="ShowAll_Click"/>
     </Grid>
 </Window>

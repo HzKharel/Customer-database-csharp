@@ -93,13 +93,12 @@ namespace Demo
             Find_txtbox.Text = String.Empty;
         }
 
-        private void Find_btn_2_Click(object sender, RoutedEventArgs e)
+        private void Find_Customer(int id)
         {
-            Int32.TryParse(Find_txtbox.Text, out Customer_ID_int);
-            Customer c = store.find(Customer_ID_int);
-            if(c != null)
+            Customer c = store.find(id);
+            if (c != null)
             {
-                
+
                 First_Name.Text = c.Name;
                 Last_Name.Text = c.LastName;
                 Email.Text = c.Email;
@@ -112,6 +111,11 @@ namespace Demo
             {
                 MessageBox.Show("The Customer with ID:" + Customer_ID_int + " is not found.");
             }
+        }
+        private void Find_btn_2_Click(object sender, RoutedEventArgs e)
+        {
+            Int32.TryParse(Find_txtbox.Text, out Customer_ID_int);
+            Find_Customer(Customer_ID_int);
              Find_btn.Visibility = Visibility.Visible;
              Find_Grid.Visibility = Visibility.Collapsed;
 
@@ -129,6 +133,21 @@ namespace Demo
             Delete_btn.Visibility = Visibility.Visible;
             Delete_Grid.Visibility = Visibility.Collapsed;
            
+        }
+
+        private void AllContacts_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+           string[] Selected_Item = AllContacts.SelectedItem.ToString().Split(' ');
+            Int32.TryParse(Selected_Item[0], out Customer_ID_int);
+            Find_Customer(Customer_ID_int);
+
+
+        }
+
+        private void ShowAll_Click(object sender, RoutedEventArgs e)
+        {
+            AllShopContacts All_Shop_Contacts = new AllShopContacts(store);
+            All_Shop_Contacts.Show();
         }
     }
 }
